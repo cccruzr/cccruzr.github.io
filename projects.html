@@ -8,8 +8,27 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla|Karla:i,b,bi">
     <meta name="viewport" content="width=device-width">
     <style type="text/css">
-        .title {
+      .title {
         margin-bottom: 0px;
+      }
+      .item {
+        margin: 0px 0px 20px 0px;
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 100px;
+      }
+      .item img {
+        max-width: 100%;
+        
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .item:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
       }
     </style>
 </head>
@@ -34,18 +53,27 @@
             <br>
             <h2 class="title"><i class="fa fa-map-o left"></i> WEB MAPPING</h2>
             <hr>
-            <ul>
-                <!--<li>
-                     <p>Conflict Mapping: Colombia's Internally Displaced People (1985-2015). <em>An animated version of the <a href="http://centerforspatialresearch.github.io/colombia_site/applications/map.html" target="_blank">outstanding map visualization</a> by <a href="http://c4sr.columbia.edu/projects/conflict-urbanism-colombia" target="_blank">C4SR</a>.</em></p>
-                    <ul>
-                        <li><a href="https://cccruzr.github.io/colmigrationleaflet/V3" target="_blank">[Leaflet version]</a></li>
-                        <li><a href="https://cccruzr.github.io/colmigrationmapbox/" target="_blank">[Mapbox GL + D3.js version]</a></li>
-                    </ul> -->
-                    <li><a href="https://cccruzr.github.io/maps/docs/masacres.html" target="_blank">
-		                  Conflict Mapping: Colombia's Massacres (1982-2013)</a></li>
-                    <li><a href="https://cccruzr.github.io/maps/CodigoPostalCO" target="_blank">
-                        Código Postal de Colombia (Webapp)</a></li>
-            </ul>
+            <h4 style="margin-bottom: 5px">Conflict Mapping: Colombia's Massacres (1982-2013)</h4>
+            <div class="item">
+              <a href="https://cccruzr.github.io/maps/docs/masacres.html" target="_blank"><img src="img/massacres.png" alt="masacres colombia webmap" width="500" height="100"></a>
+              
+              <div class="item-overlay top"></div>
+            </div>
+
+            <h4 style="margin-bottom: 5px">Código Postal de Colombia (Webapp)</h4>
+            <div class="item">
+              <a href="https://cccruzr.github.io/maps/CodigoPostalCO" target="_blank"><img src="img/postal.gif" alt="codigo postal colombia web app" width="500" height="100"></a>
+              
+              <div class="item-overlay top"></div>
+            </div>
+
+            <h4 style="margin-bottom: 5px">Conflict Mapping: Colombia's Displacement (1985-2015)</h4>
+            <div class="item">
+              <a href="https://cccruzr.github.io/colmigrationleaflet" target="_blank"><img src="img/displacement.gif" alt="colombia displacement migration web app" width="500" height="100"></a>
+              
+              <div class="item-overlay top"></div>
+            </div>
+
             <br>
             <h2 class="title"><i class="fa fa-archive left"></i> MISC</h2>
             <hr>
