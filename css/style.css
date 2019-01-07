@@ -269,10 +269,12 @@ h3, h4, h5, h6 {
 
 a {
   color: #267CB9;
+  /* color: #DC3521; */
   text-decoration: none; }
 
 a:hover, a:focus {
   color: #069; }
+  /* color: #AE2210} */
 
 a small {
   font-size: 11px;
